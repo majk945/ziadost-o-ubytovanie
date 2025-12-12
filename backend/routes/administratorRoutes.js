@@ -40,7 +40,7 @@ router.post('/vyhodnotit', async (req, res) => {
 
     const navrhVysledkov = [];
     let schvaleneCount = 0;
-    let zamietnute Count = 0;
+    let zamietnuteCount = 0;
 
     // P4.1 - Automatické vyhodnotenie podľa poradia a kapacity
     for (let i = 0; i < ziadosti.length; i++) {
