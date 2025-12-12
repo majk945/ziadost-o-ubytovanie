@@ -166,7 +166,7 @@ function ZiadostEdit({ student }) {
                   <strong>Stav:</strong> {ziadost.aktualny_stav}
                 </p>
                 <p className="mb-0">
-                  <strong>Aktuálne body:</strong> {ziadost.celkovy_pocet_bodov?.toFixed(2)}
+                  <strong>Aktuálne body:</strong> {ziadost.celkovy_pocet_bodovNumber(ziadost.celkovy_pocet_bodov).toFixed(2)}
                 </p>
               </div>
 
