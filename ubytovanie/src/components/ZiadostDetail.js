@@ -210,12 +210,12 @@ function ZiadostDetail({ student }) {
               </thead>
               <tbody>
                 {hodnotenia.map((h, index) => {
-                  const vazeneBody = (h.bodova_hodnota * h.vaha_percent / 100).toFixed(2);
+                  const vazeneBody = (Number(h.bodova_hodnota) * Number(h.vaha_percent) / 100).toFixed(2);
                   return (
                     <tr key={index}>
                       <td><strong>{h.nazov}</strong></td>
                       <td><small className="text-muted">{h.popis}</small></td>
-                      <td className="text-end">{h.bodova_hodnota.toFixed(2)}</td>
+                      <td className="text-end">{Number(h.bodova_hodnota).toFixed(2)}</td>
                       <td className="text-end">{h.vaha_percent}%</td>
                       <td className="text-end">
                         <strong className="text-primary">{vazeneBody}</strong>

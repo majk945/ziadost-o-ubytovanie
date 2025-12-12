@@ -14,7 +14,7 @@ function Layout({ student, onLogout }) {
       <footer className="bg-light text-center text-muted py-3 mt-5">
         <div className="container">
           <p className="mb-0">
-            © 2024 OnlineIntrak.sk | Aplikácia na správu žiadostí o ubytovanie
+            © 2025 OnlineIntrak.sk | Aplikácia na správu žiadostí o ubytovanie
           </p>
           <small>
             Prototyp - Backend API na porte 5000 | React frontend na porte 3000
